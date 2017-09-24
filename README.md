@@ -27,7 +27,6 @@ mvn install:install-file -Dfile=lib/jdbc/ojdbc8.jar -Dpackaging=jar -DgroupId=co
 </dependency>
 ```
 
-
 #### 11.2.0.4
 
 ```
@@ -51,20 +50,23 @@ mvn install:install-file -Dfile=lib/jdbc/ojdbc6.jar -Dpackaging=jar -DgroupId=co
  - [Installation and configuration of IBM MQ classes for Java](https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.dev.doc/q030580_.htm)
  - [What is installed for IBM MQ classes for Java](https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_8.0.0/com.ibm.mq.dev.doc/q030590_.htm)
 
+#### 8.0.0.7
+
 ```
-mvn install:install-file -Dfile=lib/mq/com.ibm.mq.allclient.jar -Dpackaging=jar -DgroupId=com.ibm.mq -DartifactId=com.ibm.mq -Dversion=8.0.x
-mvn install:install-file -Dfile=lib/mq/com.ibm.mqjms.jar -Dpackaging=jar -DgroupId=com.ibm.mq -DartifactId=com.ibm.mqjms -Dversion=8.0.x
+mvn install:install-file -Dfile=lib/mq/com.ibm.mq.allclient.jar -Dpackaging=jar -DgroupId=com.ibm.mq -DartifactId=com.ibm.mq -Dversion=8.0.0.7
+mvn install:install-file -Dfile=lib/mq/jms.jar -Dpackaging=jar -DgroupId=com.ibm.mq -DartifactId=com.ibm.mqjms -Dversion=8.0.0.7
 ```
+
 ```xml
 <dependency>
     <groupId>com.ibm.mq</groupId>
     <artifactId>com.ibm.mq</artifactId>
-    <version>8.0.x</version>
+    <version>8.0.0.7</version>
 </dependency>
 <dependency>
-    <groupId>com.ibm.mqjms</groupId>
+    <groupId>com.ibm.mq</groupId>
     <artifactId>com.ibm.mqjms</artifactId>
-    <version>8.0.x</version>
+    <version>8.0.0.7</version>
 </dependency>
 ```
 
